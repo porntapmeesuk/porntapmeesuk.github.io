@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์ พรเทพ มีสุข</title>
+    <style>
+	    a {
+        color: blue; /* สีปกติของลิงค์ */
+        text-decoration: none; /* ไม่ขีดเส้นใต้ */
+        font-size: 20px; /* ขนาดฟอนต์ของลิงค์ */
+    }
+
+    a:hover {
+        color: green; /* สีเมื่อชี้เมาส์ */
+        text-decoration: none; /* ยังคงไม่มีเส้นใต้ */
+    }
+
+        body {
+            background-color: pink;
+            font-family: "TH Sarabun New", sans-serif;
+        }
+        .container {
+            margin: auto;
+            width: 90%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%; /* จำกัดขนาดให้ไม่เกิน container */
+            height: auto;    /* รักษาอัตราส่วนของรูป */
+            display: block;  /* จัดรูปเป็น block */
+            margin: auto;    /* จัดให้อยู่ตรงกลาง */
+        }
+        .header {
+            text-align: center;
+            color: blue;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .profile {
+            text-align: left;
+            font-size: 20px;
+            color: black;
+            margin: 20px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: lightblue;
+        }
+        caption {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .color-change {
+            font-size: 30px; /* ขนาดฟอนท์ */
+            font-family: "TH Sarabun New", sans-serif;
+            animation: colorChange 2s infinite; /* สลับสีทุกๆ 2 วินาที */
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: red;
+            }
+            25% {
+                color: blue;
+            }
+            50% {
+                color: green;
+            }
+            75% {
+                color: orange;
+            }
+            100% {
+                color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/banner2.jpg" alt="Logo">
+        <div class="header">
+            <marquee id="welcomeText" behavior="alternate">ยินดีต้อนรับสู่เว็บไซต์ นายพรเทพ มีสุข  คติพจน์ในการทำงาน  </marquee>
+        </div>
+
+        <script>
+            const marquee = document.getElementById("welcomeText");
+            const colors = ["blue", "red", "green", "orange", "purple"];
+            let colorIndex = 0;
+
+            setInterval(() => {
+                marquee.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 500); // เปลี่ยนสีทุกๆ 500 มิลลิวินาที
+        </script>
+ <hr>
+    </font> <font color = "red">
+<div align= "center"> 
+<a href= "index.html">หน้าหลัก </a>| 
+<a href= "data1.html">ข้อมูลทั่วไป </a>| 
+<a href= "data2.html">ข้อมูลการศึกษา </a> | 
+<a href= "data3.html"> ความสามารถพิเศษ </a> | 
+<a href= "data4.html">คติพจน์ในการทำงาน </a>
+</div>
+    <hr>
+       
+        <table style="font-size: 20px;">
+           
+            <tr>
+                <td>  <hr>
+        <div style="overflow: auto;">
+            <!-- ภาพ -->
+            <img src="img/img_pom.jpg" alt="Logo" width="300" height="auto" style="float: left; margin-right: 20px;">
+
+            <!-- ข้อความ -->
+            <div class="profile">
+                <center><strong>คติพจน์ในการทำงาน</strong></center><br>
+"ทำวันนี้ให้ดีที่สุด พรุ่งนี้จะดีกว่าเดิม"
+(เน้นการพัฒนาตนเองและผลักดันให้ทำงานอย่างเต็มที่ในแต่ละวัน)
+
+"ความสำเร็จมาจากความพยายาม และความพยายามมาจากหัวใจที่ไม่ยอมแพ้"<br>
+(ย้ำให้มุ่งมั่นแม้ในสถานการณ์ที่ยากลำบาก)<br>
+
+"งานทุกชิ้นคือโอกาสในการแสดงศักยภาพของตัวเอง"<br>
+(กระตุ้นให้เห็นคุณค่าในทุกสิ่งที่ทำ ไม่ว่างานจะเล็กหรือใหญ่)<br>
+
+นิทานเตือนใจเกี่ยวกับการทำงาน<br>
+นิทานเรื่อง: "ช่างตัดไม้กับขวานที่หายไป"<br>
+
+มีช่างตัดไม้คนหนึ่งชื่อว่า "เอก" เขาเป็นช่างตัดไม้ที่ขยันขันแข็ง แต่วันหนึ่ง ขณะกำลังตัดต้นไม้อยู่ริมแม่น้ำ ขวานของเขาหลุดมือและตกลงไปในน้ำลึก <br>เอกหมดหวังเพราะขวานนั้นเป็นเครื่องมือสำคัญในการทำงาน<br>
+
+ทันใดนั้น เทพเจ้าผู้ดูแลแม่น้ำปรากฏตัวขึ้นและถามเอกว่า:<br>
+“เจ้าสูญเสียอะไรไป?”<br>
+
+เอกตอบว่า “ข้าสูญเสียขวานของข้าไป มันจำเป็นต่อการทำงานของข้า”<br>
+
+เทพเจ้านำขวานทองคำขึ้นมาจากแม่น้ำและถามว่า:<br>
+“นี่คือขวานของเจ้าหรือไม่?”<br>
+
+เอกตอบอย่างซื่อสัตย์ว่า:<br>
+“ไม่ใช่ ขวานของข้าทำจากเหล็กธรรมดา”<br>
+
+เทพเจ้าจึงดำน้ำอีกครั้ง และนำขวานเงินขึ้นมา เอกยังคงตอบปฏิเสธว่าไม่ใช่ขวานของเขา จนเมื่อเทพเจ้าดึงขวานเหล็กขึ้นมา เอกจึงยอมรับว่าเป็นขวานของเขา<br>
+
+เทพเจ้าประทับใจในความซื่อสัตย์ของเอก จึงมอบขวานทั้งสามเล่มให้เป็นรางวัล<br>
+
+ข้อคิดจากนิทาน<br>
+ความซื่อสัตย์เป็นคุณสมบัติที่สำคัญในการทำงาน<br>
+แม้ว่าการเลือกพูดความจริงอาจดูเหมือนไม่ได้ผลประโยชน์ในระยะสั้น แต่จะนำมาซึ่งผลลัพธ์ที่ดีในระยะยาว<br>
+
+อย่าสูญเสียความหวังแม้ในสถานการณ์ที่ลำบาก<br>
+บางครั้งปัญหาที่ดูเหมือนจะไม่มีทางแก้ไข อาจนำมาซึ่งโอกาสใหม่ ๆ<br>
+
+ผลของความดีจะกลับมาสู่เราเสมอ<br>
+การทำงานด้วยความจริงใจและตั้งใจ จะนำมาซึ่งผลลัพธ์ที่คุ้มค่าในที่สุด <br>
+            </div>
+        </div></td>
+               
+            </tr>
+        </table>
+       
+		<hr>
+		<center>Copyright © 6604016504017@brcc.ac.th | นายพรเทพ มีสุข</center>
+    </div>
+</body>
+</html>

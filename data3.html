@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์ พรเทพ มีสุข</title>
+    <style>
+	    a {
+        color: blue; /* สีปกติของลิงค์ */
+        text-decoration: none; /* ไม่ขีดเส้นใต้ */
+        font-size: 20px; /* ขนาดฟอนต์ของลิงค์ */
+    }
+
+    a:hover {
+        color: green; /* สีเมื่อชี้เมาส์ */
+        text-decoration: none; /* ยังคงไม่มีเส้นใต้ */
+    }
+
+        body {
+            background-color: pink;
+            font-family: "TH Sarabun New", sans-serif;
+        }
+        .container {
+            margin: auto;
+            width: 90%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%; /* จำกัดขนาดให้ไม่เกิน container */
+            height: auto;    /* รักษาอัตราส่วนของรูป */
+            display: block;  /* จัดรูปเป็น block */
+            margin: auto;    /* จัดให้อยู่ตรงกลาง */
+        }
+        .header {
+            text-align: center;
+            color: blue;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .profile {
+            text-align: left;
+            font-size: 20px;
+            color: black;
+            margin: 20px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: lightblue;
+        }
+        caption {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .color-change {
+            font-size: 30px; /* ขนาดฟอนท์ */
+            font-family: "TH Sarabun New", sans-serif;
+            animation: colorChange 2s infinite; /* สลับสีทุกๆ 2 วินาที */
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: red;
+            }
+            25% {
+                color: blue;
+            }
+            50% {
+                color: green;
+            }
+            75% {
+                color: orange;
+            }
+            100% {
+                color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/banner6.jpg" alt="Logo">
+        <div class="header">
+            <marquee id="welcomeText" behavior="alternate">ยินดีต้อนรับสู่เว็บไซต์ นายพรเทพ มีสุข ความสามารถพิเศษ </marquee>
+        </div>
+
+        <script>
+            const marquee = document.getElementById("welcomeText");
+            const colors = ["blue", "red", "green", "orange", "purple"];
+            let colorIndex = 0;
+
+            setInterval(() => {
+                marquee.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 500); // เปลี่ยนสีทุกๆ 500 มิลลิวินาที
+        </script>
+ <hr>
+    </font> <font color = "red">
+<div align= "center"> 
+<a href= "index.html">หน้าหลัก </a>| 
+<a href= "data1.html">ข้อมูลทั่วไป </a>| 
+<a href= "data2.html">ข้อมูลการศึกษา </a> | 
+<a href= "data3.html"> ความสามารถพิเศษ </a> | 
+<a href= "data4.html">คติพจน์ในการทำงาน </a>
+</div>
+    <hr>
+       
+        <table style="font-size: 20px;">
+            <caption>ความสามารถพิเศษ </caption>
+            <tr>
+                <th><center>หัวข้อ</center></th>
+                <th>รายละเอียด</th>
+            </tr>
+			 <tr>
+                <td><center>1</center></td>
+                <td>เขียนเว็บไซต์ html php phpmyadmin java script</td>
+            </tr>
+            <tr>
+                <td><center>2</center></td>
+                <td>เล่นดนตรี กีตาร์ กีตาร์เบส</td>
+            </tr>
+            <tr>
+                <td><center>3</center></td>
+                <td>พิมพ์ดีดสัมผัส</td>
+            </tr>
+            <tr>
+                <td><center>4</center></td>
+                <td>เล่นกีฬา หมากล้อม Go</td>
+            </tr>
+            <tr>
+                <td><center>5</center></td>
+                <td>ปิงปอง</td>
+            </tr>
+        </table>
+        <hr>
+        <img src="img/banner2.jpg" alt="Logo">
+		
+		<hr>
+		<center>Copyright © 6604016504017@brcc.ac.th | นายพรเทพ มีสุข</center>
+    </div>
+</body>
+</html>
